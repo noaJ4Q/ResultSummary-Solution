@@ -10,7 +10,8 @@ body{
 }
 
 main{
-    width: 65%;
+    width: 620px;
+    height: auto;
 }
 
 /* Sections */
@@ -30,9 +31,11 @@ main{
 
 .result-heading{
     color: hsl(241, 100%, 89%);
+    font-size: 1.2rem;
+    margin: 30px 0;
 }
 
-.result{
+.result-circle{
     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     height: 10rem;
     width: 10rem;
@@ -40,13 +43,29 @@ main{
     margin: auto;
     color: hsl(240, 21%, 64%);
     font-weight: 800;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .result-number{
     color: white;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+.result-word{
+    font-size: 1.8rem;
+    color: white;
+    margin: 30px 0 10px 0;
+}
+
+.result-comment{
+    margin: 0 44px 50px 44px;
+    font-size: 0.9rem;
+    color: hsl(241, 100%, 89%);;
 }
 
 /* Responsive grid */
