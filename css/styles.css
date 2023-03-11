@@ -1,0 +1,71 @@
+*{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 65%;
+}
+
+/* Sections */
+
+.result-section{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    text-align: center;
+}
+
+.summary-section{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Result section */
+
+.result-heading{
+    color: hsl(241, 100%, 89%);
+}
+
+.result{
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    color: hsl(240, 21%, 64%);
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+.result-number{
+    color: white;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+/* Responsive grid */
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 375px){
+    main{
+        display: block;
+    }
+
+    .result-section{
+        width: 100%;
+    }
+
+    .summary-section{
+        width: 100%;
+    }
+}
