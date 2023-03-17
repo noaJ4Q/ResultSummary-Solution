@@ -9,11 +9,6 @@ body{
     height: 100vh;
 }
 
-main{
-    width: 620px;
-    height: auto;
-}
-
 /* Sections */
 
 .result-section{
@@ -21,19 +16,22 @@ main{
     border-radius: 25px;
     text-align: center;
     padding: 35px 44px 35px 44px;
+    width: 222px;
 }
 
 .summary-section{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    
+    padding: 35px 40px 35px 70px;
+    position: relative;
+    box-shadow: 10px 12px 25px -15px hsla(224, 30%, 27%, 0.4);
 }
 
 /* Result section */
 
 .result-heading{
     color: hsl(241, 100%, 89%);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0;
     margin-bottom: 35px;
 }
@@ -72,12 +70,75 @@ main{
 
 /* Summary Section */
 
+.summary-heading{
+    font-size: 1.4rem;
+    color: hsl(224, 30%, 27%);
+    margin: 0 0 20px 0;
+}
+
+.skill-result{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border-radius: 7px;
+    position: relative;
+}
+
+.skill-icon, .skill-text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill-result-number{
+    color: hsla(224, 30%, 27%, 0.6);
+    font-weight: 800;
+    position: absolute;
+    right: 14px;
+}
+
+.skill-result-number-bold{
+    color: hsl(224, 30%, 27%);;
+}
+
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.btn-continue{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 13px 0;
+    border-radius: 40px;
+    width: 265px;
+    position: absolute;
+    bottom: 40px;
+    cursor: pointer;
+}
 
 /* Responsive grid */
 
 main{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 280px 365px;
 }
 
 @media (max-width: 375px){
@@ -91,5 +152,9 @@ main{
 
     .summary-section{
         width: 100%;
+    }
+
+    .attribution{
+        display: none;
     }
 }
