@@ -16,14 +16,13 @@ body{
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 25px;
     text-align: center;
-    padding: 35px 44px;
-    width: 222px;
+    padding: 35px 55px;
 }
 
 .summary-section{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding: 35px 40px 35px 70px;
+    padding: 35px 40px;
     position: relative;
     box-shadow: 10px 12px 25px -15px hsla(224, 30%, 27%, 0.4);
 }
@@ -66,7 +65,8 @@ body{
 
 .result-comment{
     font-size: 0.9rem;
-    color: hsl(241, 100%, 89%);;
+    color: hsl(241, 100%, 89%);
+    letter-spacing: .3px;
 }
 
 /* Summary Section */
@@ -128,28 +128,34 @@ body{
     background-color: hsl(224, 30%, 27%);
     font-weight: 700;
     font-size: 0.9rem;
-    padding: 13px 0;
+    padding: 15px 0;
     border-radius: 40px;
     width: 100%;
     margin: 15px auto 0 auto;
     cursor: pointer;
     text-align: center;
+    transition: all 0.3s;
+}
+
+.btn-continue:hover{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 /* Responsive grid */
 
 main{
     display: grid;
-    grid-template-columns: 280px 365px;
+    grid-template-columns: minmax(47%, 315px) minmax(53%, 365px);
 }
 
-@media (max-width: 375px){
+@media (max-width: 540px){
     *{
         box-sizing: border-box;
     }
 
     main{
         display: block;
+        height: 100%;
     }
 
     /* Sections */
@@ -157,10 +163,11 @@ main{
     .result-section{
         width: 100%;
         border-radius: 0 0 35px 35px;
-        padding: 35px 55px;
+        padding: 28px 55px 35px 55px;
     }
 
     .summary-section{
+        width: auto;
         padding: 18px 30px;
         box-shadow: none;
     }
